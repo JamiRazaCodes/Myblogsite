@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Your Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-dark-purple {
+      background-color: #2D2A32;
+    }
+
+    .text-light-purple {
+      color: #C1A1C7;
+    }
+
+    .text-muted-purple {
+      color: #E0D1E7;
+    }
+
+    .bg-muted-purple {
+      background-color: #4A4455;
+    }
+
+    .bg-hero-pattern {
+      background-image: url('https://wallpapers.com/images/hd/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="bg-hero-pattern h-screen flex items-center justify-center">
+
+  <div class="bg-dark-purple bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
+    <h2 class="text-3xl text-center text-light-purple font-bold mb-6">Sign Up</h2>
+      <div class="mb-4">
+        <label class="block text-muted-purple text-sm font-bold mb-2" for="name">
+          Name
+        </label>
+        <input id="userName" class="bg-muted-purple text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter your name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted-purple text-sm font-bold mb-2" for="email">
+          Email
+        </label>
+        <input id="email" class="bg-muted-purple text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-6">
+        <label class="block text-muted-purple text-sm font-bold mb-2" for="password">
+          Password
+        </label>
+        <input id="password" class="bg-muted-purple text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter your password">
+      </div>
+      <div class="mb-6">
+      <div class="flex items-center justify-between mb-4">
+        <button onclick="signupUser()" class="bg-purple-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-purple-800" type="submit">
+          Sign Up
+        </button>
+      </div>
+      <div class="text-center">
+        <p class="text-muted-purple">Already have an account? <a href="login.html" class="text-purple-300 hover:text-purple-500 font-bold">Login Here</a></p>
+      </div>
+  </div>
+  <script type="module" src="signup.js">
+  </script>
+</body>
+
+</html>
